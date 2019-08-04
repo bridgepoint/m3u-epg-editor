@@ -6,3 +6,4 @@
 *.sh
 /test.json
 *.log
+/*.json
