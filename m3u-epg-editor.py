@@ -546,7 +546,7 @@ def save_new_m3u(args, m3u_entries):
                     # text_file.write('%s\n' % entry.url)
 
                     # Add the stream restart code
-                    text_file.write('pipe:///path/to/ffmpeg -loglevel fatal -i %s -vcodec copy -acodec copy -metadata service_provider=STRING -metadata service_name=STRING -f mpegts -tune zerolatency pipe:1 \n' % entry.url)
+                    text_file.write('pipe:///ffmpeg -loglevel fatal -i %s -vcodec copy -acodec copy -metadata service_provider=STRING -metadata service_name=STRING -f mpegts -tune zerolatency pipe:1 \n' % entry.url)
 
 
 
